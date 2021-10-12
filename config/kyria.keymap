@@ -99,7 +99,7 @@
 		default_layer {
             label = "alpha";
 // -------------------------------------------------------------------------------------------------------------------------------------
-// |   ESC  |  J  |  M  |  H   |  F   |  V   |                                          |  '   |  A    |  O    |  Y   |   K   |   |  |
+// |   ESC  |  J  |  F  |  M   |  P   |  V   |                                          |  -   |  U    |  O    |  Y   |   K   |   |  |
 // | L CTRL |  R  |  S  |  N   |  T   |  G   |                                          |  /   |  A    |  E    |  I   |   H   |   \  |
 // |  SHIFT |  X  |  C  |  L   |  D   |  B   |  NONE   |   NONE  |  |   NONE  |  NONE   |  \   |  ,    |  .    |  '   |   `   |   `  |
 //                      | MUTE | TAB  | DEL  |  SCLN   |   ESC   |  |   ENT   |  SPACE  | BSPC | R ALT |  NONE |
