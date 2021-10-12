@@ -92,6 +92,14 @@
             mods = <(MOD_LALT|MOD_LSFT|MOD_RALT|MOD_RSFT)>;
         };
 
+        minplus: minus_plus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MINUS_PLUS";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp PLUS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         rparbkt: rparen_bracket {
             compatible = "zmk,behavior-mod-morph";
             label = "RPAREN_BRACKET";
@@ -112,7 +120,7 @@
 // |  SHIFT |  X  |  C  |  L   |  D   |  B   |  NONE   |   NONE  |  |   NONE  |  NONE   |  \   |  ,    |  .    |  '   |   `   |   `  |
 //                      | MUTE | TAB  | DEL  |  SCLN   |   ESC   |  |   ENT   |  SPACE  | BSPC | R ALT |  NONE |
 			bindings = <
-	&lt LOWER ESC  &kp J      &kp F      &kp M       &kp P       &kp V                                            &kp MINUS &kp U        &kp O       &kp Y      &kp K      &kp PIPE
+	&lt LOWER ESC  &kp J      &kp F      &kp M       &kp P       &kp V                                            &minplus  &kp U        &kp O       &kp Y      &kp K      &kp PIPE
 	&mt LCTRL BSPC &hm LALT R &hm LGUI S &hm LSHFT N &hm LCTRL T &kp G                                            &fslast   &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
 	&kp LSHFT      &kp X      &kp C      &kp L       &kp D       &kp B  &none  &none          &none   &none       &kp BSLH  &comque      &dotexc     &kp SQT    &kp GRAVE  &kp GRAVE
                                   &kp C_MUTE &kp TAB &kp DEL &lt LOWER SCLN &lt RAISE ESC     &lt RAISE RET &lt LOWER SPACE &kp BSPC &kp RALT &sl CONTROL
