@@ -47,7 +47,7 @@
             label = "COLON_SEMICOLON";
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp SEMI>;
-            mods = <MOD_LSFT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         comque: comma_question {
@@ -55,7 +55,7 @@
             label = "COMMA_QUESTION";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp QMARK>;
-            mods = <MOD_LSFT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         dotexc: dot_exclamation {
@@ -63,7 +63,15 @@
             label = "DOT_EXCL";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp EXCL>;
-            mods = <MOD_LSFT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        fslast: fslash_asterisk {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FSLASH_ASTERISK";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp ASTERISK>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         hm: homerow_mod {
@@ -105,7 +113,7 @@
 //                      | MUTE | TAB  | DEL  |  SCLN   |   ESC   |  |   ENT   |  SPACE  | BSPC | R ALT |  NONE |
 			bindings = <
 	&lt LOWER ESC  &kp J      &kp F      &kp M       &kp P       &kp V                                            &kp MINUS &kp U        &kp O       &kp Y      &kp K      &kp PIPE
-	&mt LCTRL BSPC &hm LALT R &hm LGUI S &hm LSHFT N &hm LCTRL T &kp G                                            &kp FSLH  &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
+	&mt LCTRL BSPC &hm LALT R &hm LGUI S &hm LSHFT N &hm LCTRL T &kp G                                            &fslast   &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
 	&kp LSHFT      &kp X      &kp C      &kp L       &kp D       &kp B  &none  &none          &none   &none       &kp BSLH  &comque      &dotexc     &kp SQT    &kp GRAVE  &kp GRAVE
                                   &kp C_MUTE &kp TAB &kp DEL &lt LOWER SCLN &lt RAISE ESC     &lt RAISE RET &lt LOWER SPACE &kp BSPC &kp RALT &sl CONTROL
 			>;
