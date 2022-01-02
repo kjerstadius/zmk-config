@@ -14,7 +14,7 @@
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
-#define CONTROL 3
+#define ADJUST  3
 
 &mt {
     tapping-term-ms = <170>;
@@ -123,7 +123,7 @@
 	&lt LOWER ESC  &kp J      &kp F      &kp M       &kp P       &kp V                                            &minplus  &kp U        &kp O       &kp Y      &kp K      &kp PIPE
 	&mt LCTRL BSPC &hm LALT R &hm LGUI S &hm LSHFT N &hm LCTRL T &kp G                                            &fslast   &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
 	&kp LSHFT      &kp X      &kp C      &kp L       &kp D       &kp B  &none  &none          &none   &none       &kp BSLH  &comque      &dotexc     &kp SQT    &kp GRAVE  &kp GRAVE
-                                  &kp C_MUTE &kp TAB &kp DEL &lt LOWER SCLN &lt RAISE ESC     &lt RAISE RET &lt LOWER SPACE &kp BSPC &kp RALT &sl CONTROL
+                                  &kp C_MUTE &kp TAB &kp DEL &lt LOWER SCLN &lt RAISE ESC     &lt RAISE RET &lt LOWER SPACE &kp BSPC &kp RALT &sl ADJUST
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -152,8 +152,8 @@
 
 			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
-        control_layer {
-            label = "control";
+        adjust_layer {
+            label = "adjust";
             bindings = <
     &none &rgb_ug RGB_TOG   &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_SAD                 &rgb_ug RGB_TOG &reset       &bootloader  &none        &none &none
     &none &ext_power EP_TOG &rgb_ug RGB_BRI &rgb_ug RGB_BRD &none           &none                           &none           &none        &none        &none        &none &none
