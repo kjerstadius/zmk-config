@@ -15,5 +15,15 @@
 include:
   - board: nice_nano_v2
     shield: kyria_left
+    cmake-args: "-DCONFIG_ZMK_KEYBOARD_NAME='\"Kyria #1\"'"
   - board: nice_nano_v2
     shield: kyria_right
+    cmake-args: "-DCONFIG_ZMK_KEYBOARD_NAME='\"Kyria #1\"'"
+  - board: nice_nano_v2
+    shield: kyria_left
+    cmake-args: "-DCONFIG_ZMK_KEYBOARD_NAME='\"Kyria #2\"'
+                 -DCONFIG_ZMK_RGB_UNDERGLOW=n"
+  - board: nice_nano_v2
+    shield: kyria_right
+    cmake-args: "-DCONFIG_ZMK_KEYBOARD_NAME='\"Kyria #2\"'
+                 -DCONFIG_ZMK_RGB_UNDERGLOW=n"
