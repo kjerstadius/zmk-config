@@ -75,6 +75,14 @@
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
 
+        ccaps: cw_caps {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CW_CAPS";
+            #binding-cells = <0>;
+            bindings = <&caps_word>, <&kp CAPS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         colsem: colon_semicolon {
             compatible = "zmk,behavior-mod-morph";
             label = "COLON_SEMICOLON";
@@ -247,7 +255,7 @@
             timeout-ms = <50>;
             key-positions = <13 16>;
             layers = <0>;
-            bindings = <&kp CAPS>;
+            bindings = <&ccaps>;
         };
         combo_lparbracket {
             timeout-ms = <50>;
