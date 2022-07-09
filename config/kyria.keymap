@@ -88,7 +88,7 @@
             label = "HOMEROW_MOD";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
-            quick_tap_ms = <0>;
+            quick_tap_ms = <145>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -129,10 +129,10 @@
 // |  SHIFT |  X  |  C  |  L   |  D   |  B   |  NONE   |   NONE  |  |   NONE  |  NONE   |  \   |  ,    |  .    |  '   |   `   |   `  |
 //                      | MUTE | TAB  | DEL  |  SCLN   |   ESC   |  |   ENT   |  SPACE  | BSPC | R ALT |  NONE |
 			bindings = <
-	&lt LOWER ESC  &kp J      &kp F      &kp M       &kp P       &kp V                                            &minplus  &kp U        &kp O       &kp Y      &kp K      &kp PIPE
-	&mt LCTRL BSPC &hm LALT R &hm LGUI S &hm LSHFT N &hm LCTRL T &kp G                                            &fslast   &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
-	&kp LSHFT      &kp X      &kp C      &kp L       &kp D       &kp B  &none  &none          &none   &none       &kp BSLH  &comque      &dotexc     &kp SQT    &kp GRAVE  &kp GRAVE
-                                  &kp C_MUTE &kp TAB &kp DEL &lt LOWER SCLN &lt RAISE ESC     &lt RAISE RET &lt LOWER SPACE &kp BSPC &kp RALT &sl ADJUST
+	&lt LOWER ESC  &kp J      &kp F      &kp M       &kp P       &kp V                                                              &minplus     &kp U        &kp O       &kp Y      &kp K      &kp PIPE
+	&mt LCTRL BSPC &hm LALT R &hm LGUI S &hm LSHFT N &hm LCTRL T &kp G                                                              &fslast      &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
+	&kp LSHFT      &kp X      &kp C      &kp L       &kp D       &kp B   &none          &none         &none         &none           &kp BSLH     &comque      &dotexc     &kp SQT    &kp GRAVE  &kp GRAVE
+                                         &sl MACRO   &kp TAB     &kp DEL &lt LOWER SCLN &lt RAISE ESC &lt RAISE RET &lt LOWER SPACE &kp BSPC     &kp RALT     &sl ADJUST
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
