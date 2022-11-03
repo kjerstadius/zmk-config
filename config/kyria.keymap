@@ -40,6 +40,99 @@
                 , <&kp FSLH &kp H &kp I &kp D &kp E &kp O &kp U &kp T>
                 , <&kp RET>;
         };
+        poe_rst_xp: poe_rst_xp {
+            label = "POE_RST_XP";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <5>;
+            tap-ms = <5>;
+            #binding-cells = <0>;
+            bindings
+                = <&kp RET>
+                , <&kp FSLH &kp R &kp E &kp S &kp E &kp T &kp UNDER &kp X &kp P>
+                , <&kp RET>;
+        };
+        poe_gf: poe_gamble_filter {
+            label = "POE_GF";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <5>;
+            tap-ms = <5>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp F>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp DQT>
+                , <&macro_tap &kp D &kp E &kp R &kp SPACE &kp M &kp PIPE>
+                , <&macro_tap &kp E &kp SQT &kp S &kp SPACE &kp R &kp PIPE>
+                , <&macro_tap &kp N &kp T &kp SPACE &kp R &kp O &kp PIPE>
+                , <&macro_tap &kp R &kp SPACE &kp B &kp E &kp PIPE>
+                , <&macro_tap &kp V &kp Y &kp SPACE &kp B &kp PIPE>
+                , <&macro_tap &kp I &kp N &kp T &kp SQT &kp PIPE>
+                , <&macro_tap &kp N &kp SPACE &kp J &kp PIPE>
+                , <&macro_tap &kp A &kp M &kp P &kp PIPE>
+                , <&macro_tap &kp P &kp I &kp D>
+                , <&macro_tap &kp DQT>;
+        };
+        poe_rf_mm1: poe_rf_map_mods_1 {
+            label = "POE_RF_MM1";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <5>;
+            tap-ms = <5>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp F>,
+                <&macro_release &kp LCTRL>,
+                <&macro_tap &kp DQT>,
+                <&macro_tap &kp K &kp E &kp SPACE &kp C &kp PIPE>,
+                <&macro_tap &kp D &kp SPACE &kp C &kp H &kp PIPE>,
+                <&macro_tap &kp PERCENT &kp SPACE &kp E &kp PIPE>,
+                <&macro_tap &kp M &kp SPACE &kp P &kp L &kp PIPE>,
+                <&macro_tap &kp COMMA &kp SPACE &kp M &kp PIPE>,
+                <&macro_tap &kp F &kp SPACE &kp L>,
+                <&macro_tap &kp DQT>;
+        };
+        poe_rf_mm2: poe_rf_map_mods_2 {
+            label = "POE_RF_MM2";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <5>;
+            tap-ms = <5>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp F>,
+                <&macro_release &kp LCTRL>,
+                <&macro_tap &kp DQT>,
+                <&macro_tap &kp M &kp SPACE &kp P &kp L &kp PIPE>,
+                <&macro_tap &kp E &kp G &kp E &kp PIPE>,
+                <&macro_tap &kp S &kp SPACE &kp R &kp E &kp C &kp PIPE>,
+                <&macro_tap &kp L &kp O &kp C &kp PIPE>,
+                <&macro_tap &kp N &kp O &kp N &kp PIPE>,
+                <&macro_tap &kp S &kp S &kp SPACE &kp A &kp R &kp E>,
+                <&macro_tap &kp DQT>;
+        };
+        poe_rf_mm3: poe_rm_map_mods_3 {
+            label = "POE_RF_MM3";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <5>;
+            tap-ms = <5>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp F>,
+                <&macro_release &kp LCTRL>,
+                <&macro_tap &kp DQT>,
+                <&macro_tap &kp M &kp SPACE &kp P &kp L &kp PIPE>,
+                <&macro_tap &kp E &kp G &kp E &kp PIPE>,
+                <&macro_tap &kp S &kp SPACE &kp R &kp E &kp C &kp PIPE>,
+                <&macro_tap &kp L &kp O &kp C &kp PIPE>,
+                <&macro_tap &kp N &kp O &kp N &kp PIPE>,
+                <&macro_tap &kp S &kp S &kp SPACE &kp A &kp R &kp E &kp PIPE>,
+                <&macro_tap &kp N &kp S &kp E &kp C &kp R &kp A &kp T &kp E &kp PIPE>,
+                <&macro_tap &kp M &kp SPACE &kp L &kp I &kp PIPE>,
+                <&macro_tap &kp P &kp O &kp S &kp S>,
+                <&macro_tap &kp DQT>;
+        };
     };
 };
 
@@ -171,8 +264,8 @@
         macro_layer {
             label = "macro";
             bindings = <
-    &none &none &poe_ho &none &none &none                           &none &none &none &none &none &none
-    &none &none &none   &none &none &none                           &none &none &none &none &none &none
+    &none &none &poe_ho &poe_rst_xp &poe_gf &none                           &none &none &none &none &none &none
+    &none &none &poe_rf_mm1 &poe_rf_mm2 &poe_rf_mm3 &none                           &none &none &none &none &none &none
     &none &none &none   &none &none &none &none &none   &none &none &none &none &none &none &none &none
                         &none &none &none &none &none   &none &none &none &none &none
             >;
