@@ -159,9 +159,9 @@
 		gaming_layer {
             label = "gaming";
 			bindings = <
-	&lt LOWER ESC  &kp J &kp F &kp M &kp P &kp V                                                        &minplus  &kp U        &kp O       &kp Y      &kp K      &kp PIPE
-	&mt LCTRL TAB  &kp R &kp S &kp N &kp T &kp G                                                        &fslast   &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
-	&kp LSHFT      &kp X &kp C &kp L &kp D &kp B    &none  &none                     &none  &none       &kp BSLH  &comque      &dotexc     &kp SQT    &kp GRAVE  &kp GRAVE
+	&hm LALT ESC  &kp J &kp F &kp M &kp P &kp V                                                        &minplus  &kp U        &kp O       &kp Y      &kp K      &kp PIPE
+	&mt LCTRL TAB &kp R &kp S &kp N &kp T &kp G                                                        &fslast   &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
+	&kp LSHFT     &kp X &kp C &kp L &kp D &kp B    &none  &none                     &none  &none       &kp BSLH  &comque      &dotexc     &kp SQT    &kp GRAVE  &kp GRAVE
                          &kp C_MUTE &kp TAB &kp DEL &kp SCLN &lt RAISE ESC     &lt RAISE RET &lt LOWER SPACE &kp BSPC &kp RALT &sl ADJUST
 			>;
 
