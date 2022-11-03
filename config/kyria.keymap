@@ -29,11 +29,11 @@
 
 / {
     macros {
-        poe_ho: zmk_macro {
+        poe_ho: poe_ho {
             label = "POE_HO";
             compatible = "zmk,behavior-macro";
-            wait-ms = <15>;
-            tap-ms = <15>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             #binding-cells = <0>;
             bindings
                 = <&kp RET>
