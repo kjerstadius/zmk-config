@@ -204,11 +204,11 @@
             bindings = <&kp>, <&kp>;
         };
 
-        lparbkt: lparen_bracket {
+        lparbrc: lparen_lbrace {
             compatible = "zmk,behavior-mod-morph";
-            label = "LPAREN_BRACKET";
+            label = "LPAREN_LBRACE";
             #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp LBKT>;
+            bindings = <&kp LPAR>, <&kp LBRC>;
             mods = <(MOD_LALT|MOD_LSFT|MOD_RALT|MOD_RSFT)>;
         };
 
@@ -220,11 +220,11 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        rparbkt: rparen_bracket {
+        rparbrc: rparen_rbrace {
             compatible = "zmk,behavior-mod-morph";
-            label = "RPAREN_BRACKET";
+            label = "RPAREN_RBRACE";
             #binding-cells = <0>;
-            bindings = <&kp RPAR>, <&kp RBKT>;
+            bindings = <&kp RPAR>, <&kp RBRC>;
             mods = <(MOD_LALT|MOD_LSFT|MOD_RALT|MOD_RSFT)>;
         };
     };
@@ -371,17 +371,17 @@
             layers = <DEFAULT GAMING>;
             bindings = <&ccaps>;
         };
-        combo_lparbracket {
+        combo_lparbrace {
             timeout-ms = <50>;
             key-positions = <14 15>;
             layers = <DEFAULT GAMING>;
-            bindings = <&lparbkt>;
+            bindings = <&lparbrc>;
         };
-        combo_rparbracket {
+        combo_rparbrace {
             timeout-ms = <50>;
             key-positions = <15 16>;
             layers = <DEFAULT GAMING>;
-            bindings = <&rparbkt>;
+            bindings = <&rparbrc>;
         };
         combo_w {
             timeout-ms = <50>;
