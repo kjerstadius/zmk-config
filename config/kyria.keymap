@@ -298,7 +298,7 @@
         adjust_layer {
             label = "adjust";
             bindings = <
-    &none &rgb_ug RGB_TOG   &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_SAD                 &rgb_ug RGB_TOG &reset       &bootloader  &none        &none &none
+    &none &rgb_ug RGB_TOG   &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_SAD                 &rgb_ug RGB_TOG &sys_reset   &bootloader  &none        &none &none
     &none &ext_power EP_TOG &rgb_ug RGB_BRI &rgb_ug RGB_BRD &none           &none                           &none           &bt BT_CLR   &none        &none        &none &none
     &none &out OUT_TOG      &none           &none           &none           &none &none &none  &none &none  &none           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none &none
                                             &none           &none           &none &none &none  &none &tog GAMING  &none &none  &none
