@@ -246,7 +246,7 @@
                                          &sl MACRO   &kp TAB     &kp DEL &lt LOWER SCLN &lt RAISE ESC &lt RAISE RET &lt LOWER SPACE &kp BSPC     &kp RALT     &sl ADJUST
 			>;
 
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
 		gaming_layer {
@@ -258,7 +258,7 @@
                          &kp C_MUTE &kp TAB &kp DEL &kp SCLN &lt RAISE ESC     &lt RAISE RET &lt LOWER SPACE &kp BSPC &kp RALT &sl ADJUST
 			>;
 
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
         macro_layer {
@@ -280,7 +280,7 @@
                               &none    &none     &kp MINUS &kp COLON &kp SEMI  &kp EQUAL &kp N0 &kp COMMA &kp DOT &none
             >;
 
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         raise_layer {
@@ -292,7 +292,7 @@
                           &trans &trans &trans          &trans  &trans   &trans  &trans  &trans  &trans    &trans
             >;
 
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         adjust_layer {
