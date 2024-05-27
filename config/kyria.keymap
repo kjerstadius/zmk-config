@@ -233,7 +233,7 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
-            label = "alpha";
+            display-name = "alpha";
 // -------------------------------------------------------------------------------------------------------------------------------------
 // |   ESC  |  J  |  F  |  M   |  P   |  V   |                                          |  -   |  U    |  O    |  Y   |   K   |   |  |
 // | L CTRL |  R  |  S  |  N   |  T   |  G   |                                          |  /   |  A    |  E    |  I   |   H   |   \  |
@@ -250,7 +250,7 @@
 		};
 
 		gaming_layer {
-            label = "gaming";
+            display-name = "gaming";
 			bindings = <
 	&hm LALT ESC  &kp J &kp F &kp M &kp P &kp V                                                        &minplus  &kp U        &kp O       &kp Y      &kp K      &kp PIPE
 	&mt LCTRL TAB &kp R &kp S &kp N &kp T &kp G                                                        &fslast   &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
@@ -262,7 +262,7 @@
 		};
 
         macro_layer {
-            label = "macro";
+            display-name = "macro";
             bindings = <
     &none &none &poe_ho &poe_rst_xp &poe_gf &none                           &none &none &none &none &none &none
     &none &none &poe_rf_mm1 &poe_rf_mm2 &poe_rf_mm3 &none                           &none &none &none &none &none &none
@@ -272,7 +272,7 @@
         };
 
         lower_layer {
-            label = "lower";
+            display-name = "lower";
             bindings = <
     &trans &kp AT    &kp LBKT &kp RBKT &kp HASH  &kp CARET                                      &kp LPAR  &kp N7  &kp N8 &kp N9 &kp RPAR  &none
     &trans &kp TILDE &kp PIPE &kp BSLH &kp UNDER &kp DLLR                                       &kp MINUS &kp N4  &kp N5 &kp N6 &kp ASTRK &none
@@ -284,7 +284,7 @@
         };
 
         raise_layer {
-            label = "raise";
+            display-name = "raise";
             bindings = <
     &trans &kp F12 &kp F7 &kp F8 &kp F9 &kp PSCRN                                        &kp INS &kp HOME   &kp PG_DN  &kp PG_UP  &kp END   &none
     &trans &kp F11 &kp F4 &kp F5 &kp F6 &kp CAPS                                         &none   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT &none
@@ -296,7 +296,7 @@
         };
 
         adjust_layer {
-            label = "adjust";
+            display-name = "adjust";
             bindings = <
     &none &rgb_ug RGB_TOG   &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_SAD                 &rgb_ug RGB_TOG &sys_reset   &bootloader  &none        &none &none
     &none &ext_power EP_TOG &rgb_ug RGB_BRI &rgb_ug RGB_BRD &none           &none                           &none           &bt BT_CLR   &none        &none        &none &none
