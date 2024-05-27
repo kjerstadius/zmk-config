@@ -30,7 +30,6 @@
 / {
     macros {
         poe_ho: poe_ho {
-            label = "POE_HO";
             compatible = "zmk,behavior-macro";
             wait-ms = <5>;
             tap-ms = <5>;
@@ -41,7 +40,6 @@
                 , <&kp RET>;
         };
         poe_rst_xp: poe_rst_xp {
-            label = "POE_RST_XP";
             compatible = "zmk,behavior-macro";
             wait-ms = <5>;
             tap-ms = <5>;
@@ -52,7 +50,6 @@
                 , <&kp RET>;
         };
         poe_gf: poe_gamble_filter {
-            label = "POE_GF";
             compatible = "zmk,behavior-macro";
             wait-ms = <5>;
             tap-ms = <5>;
@@ -74,7 +71,6 @@
                 , <&macro_tap &kp DQT>;
         };
         poe_rf_mm1: poe_rf_map_mods_1 {
-            label = "POE_RF_MM1";
             compatible = "zmk,behavior-macro";
             wait-ms = <5>;
             tap-ms = <5>;
@@ -93,7 +89,6 @@
                 <&macro_tap &kp DQT>;
         };
         poe_rf_mm2: poe_rf_map_mods_2 {
-            label = "POE_RF_MM2";
             compatible = "zmk,behavior-macro";
             wait-ms = <5>;
             tap-ms = <5>;
@@ -112,7 +107,6 @@
                 <&macro_tap &kp DQT>;
         };
         poe_rf_mm3: poe_rm_map_mods_3 {
-            label = "POE_RF_MM3";
             compatible = "zmk,behavior-macro";
             wait-ms = <5>;
             tap-ms = <5>;
@@ -140,7 +134,6 @@
     behaviors {
         aasp: a_asperand {
             compatible = "zmk,behavior-mod-morph";
-            label = "A_ASPERAND";
             #binding-cells = <0>;
             bindings = <&kp A>, <&kp AT>;
             mods = <MOD_LALT>;
@@ -148,7 +141,6 @@
 
         bsdel: backspace_del {
             compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DEL";
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&kp DEL>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
@@ -156,7 +148,6 @@
 
         ccaps: cw_caps {
             compatible = "zmk,behavior-mod-morph";
-            label = "CW_CAPS";
             #binding-cells = <0>;
             bindings = <&caps_word>, <&kp CAPS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -164,7 +155,6 @@
 
         colsem: colon_semicolon {
             compatible = "zmk,behavior-mod-morph";
-            label = "COLON_SEMICOLON";
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -172,7 +162,6 @@
 
         comque: comma_question {
             compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_QUESTION";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -180,7 +169,6 @@
 
         dotexc: dot_exclamation {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOT_EXCL";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -188,7 +176,6 @@
 
         fslast: fslash_asterisk {
             compatible = "zmk,behavior-mod-morph";
-            label = "FSLASH_ASTERISK";
             #binding-cells = <0>;
             bindings = <&kp FSLH>, <&kp ASTERISK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -196,7 +183,6 @@
 
         hm: homerow_mod {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick-tap-ms = <145>;
@@ -206,7 +192,6 @@
 
         lparbrc: lparen_lbrace {
             compatible = "zmk,behavior-mod-morph";
-            label = "LPAREN_LBRACE";
             #binding-cells = <0>;
             bindings = <&kp LPAR>, <&kp LBRC>;
             mods = <(MOD_LALT|MOD_LSFT|MOD_RALT|MOD_RSFT)>;
@@ -214,7 +199,6 @@
 
         minplus: minus_plus {
             compatible = "zmk,behavior-mod-morph";
-            label = "MINUS_PLUS";
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp PLUS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -222,7 +206,6 @@
 
         rparbrc: rparen_rbrace {
             compatible = "zmk,behavior-mod-morph";
-            label = "RPAREN_RBRACE";
             #binding-cells = <0>;
             bindings = <&kp RPAR>, <&kp RBRC>;
             mods = <(MOD_LALT|MOD_LSFT|MOD_RALT|MOD_RSFT)>;
