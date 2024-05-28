@@ -174,6 +174,13 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        dqttilde: dquote_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES>, <&kp TILDE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         fslast: fslash_asterisk {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -210,6 +217,20 @@
             bindings = <&kp RPAR>, <&kp RBRC>;
             mods = <(MOD_LALT|MOD_LSFT|MOD_RALT|MOD_RSFT)>;
         };
+
+        sqttick: squote_backtick {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp GRAVE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        underdollar: underscore_dollar {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp UNDERSCORE>, <&kp DOLLAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -218,14 +239,14 @@
         default_layer {
             display-name = "alpha";
             // -------------------------------------------------------------------------------------------------------------------------------------
-            // |   ESC  |  J  |  F  |  M   |  P   |  V   |                                          |  -   |  U    |  O    |  Y   |   K   |   |  |
-            // | L CTRL |  R  |  S  |  N   |  T   |  G   |                                          |  /   |  A    |  E    |  I   |   H   |   \  |
-            // |  SHIFT |  X  |  C  |  L   |  D   |  B   |  NONE   |   NONE  |  |   NONE  |  NONE   |  \   |  ,    |  .    |  '   |   `   |   `  |
+            // |   ESC  |  J  |  F  |  M   |  P   |  V   |                                          |  - + |   U   |   O   |  Y   |   K   |   |  |
+            // | L CTRL |  R  |  S  |  N   |  T   |  G   |                                          |  / * |   A   |   E   |  I   |   H   |   \  |
+            // |  SHIFT |  X  |  C  |  L   |  D   |  B   |  NONE   |   NONE  |  |   NONE  |  NONE   |  _ ~ |  , ?  |  . !  |  ' " |   `   |   `  |
             //                      | MUTE | TAB  | DEL  |  SCLN   |   ESC   |  |   ENT   |  SPACE  | BSPC | R ALT |  NONE |
             bindings = <
                 &lt LOWER ESC  &kp J      &kp F      &kp M       &kp P       &kp V                                                              &minplus     &kp U        &kp O       &kp Y      &kp K      &kp PIPE
                 &mt LCTRL BSPC &hm LALT R &hm LGUI S &hm LSHFT N &hm LCTRL T &kp G                                                              &fslast      &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
-                &kp LSHFT      &kp X      &kp C      &kp L       &kp D       &kp B   &none          &none         &none         &none           &kp BSLH     &comque      &dotexc     &kp SQT    &kp GRAVE  &kp GRAVE
+                &kp LSHFT      &kp X      &kp C      &kp L       &kp D       &kp B   &none          &none         &none         &none           &underdollar &comque      &dotexc     &dqttilde  &sqttick   &kp GRAVE
                                                      &sl MACRO   &kp TAB     &kp DEL &lt LOWER SCLN &lt RAISE ESC &lt RAISE RET &lt LOWER SPACE &kp BSPC     &kp RALT     &sl ADJUST
             >;
 
@@ -235,10 +256,10 @@
         gaming_layer {
             display-name = "gaming";
             bindings = <
-                &hm LALT ESC  &kp J &kp F &kp M      &kp P   &kp V                                                            &minplus  &kp U        &kp O       &kp Y      &kp K      &kp PIPE
-                &mt LCTRL TAB &kp R &kp S &kp N      &kp T   &kp G                                                            &fslast   &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
-                &kp LSHFT     &kp X &kp C &kp L      &kp D   &kp B   &none    &none             &none         &none           &kp BSLH  &comque      &dotexc     &kp SQT    &kp GRAVE  &kp GRAVE
-                                          &kp C_MUTE &kp TAB &kp DEL &kp SCLN &lt RAISE ESC     &lt RAISE RET &lt LOWER SPACE &kp BSPC  &kp RALT     &sl ADJUST
+                &hm LALT ESC  &kp J &kp F &kp M      &kp P   &kp V                                                            &minplus     &kp U        &kp O       &kp Y      &kp K      &kp PIPE
+                &mt LCTRL TAB &kp R &kp S &kp N      &kp T   &kp G                                                            &fslast      &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
+                &kp LSHFT     &kp X &kp C &kp L      &kp D   &kp B   &none    &none             &none         &none           &underdollar &comque      &dotexc     &dqttilde  &sqttick   &kp GRAVE
+                                          &kp C_MUTE &kp TAB &kp DEL &kp SCLN &lt RAISE ESC     &lt RAISE RET &lt LOWER SPACE &kp BSPC     &kp RALT     &sl ADJUST
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
