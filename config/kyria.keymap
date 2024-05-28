@@ -1,8 +1,8 @@
 /*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
+* Copyright (c) 2020 The ZMK Contributors
+*
+* SPDX-License-Identifier: MIT
+*/
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -75,57 +75,57 @@
             wait-ms = <5>;
             tap-ms = <5>;
             #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp LCTRL>,
-                <&macro_tap &kp F>,
-                <&macro_release &kp LCTRL>,
-                <&macro_tap &kp DQT>,
-                <&macro_tap &kp K &kp E &kp SPACE &kp C &kp PIPE>,
-                <&macro_tap &kp D &kp SPACE &kp C &kp H &kp PIPE>,
-                <&macro_tap &kp PERCENT &kp SPACE &kp E &kp PIPE>,
-                <&macro_tap &kp M &kp SPACE &kp P &kp L &kp PIPE>,
-                <&macro_tap &kp COMMA &kp SPACE &kp M &kp PIPE>,
-                <&macro_tap &kp F &kp SPACE &kp L>,
-                <&macro_tap &kp DQT>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp F>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp DQT>
+                , <&macro_tap &kp K &kp E &kp SPACE &kp C &kp PIPE>
+                , <&macro_tap &kp D &kp SPACE &kp C &kp H &kp PIPE>
+                , <&macro_tap &kp PERCENT &kp SPACE &kp E &kp PIPE>
+                , <&macro_tap &kp M &kp SPACE &kp P &kp L &kp PIPE>
+                , <&macro_tap &kp COMMA &kp SPACE &kp M &kp PIPE>
+                , <&macro_tap &kp F &kp SPACE &kp L>
+                , <&macro_tap &kp DQT>;
         };
         poe_rf_mm2: poe_rf_map_mods_2 {
             compatible = "zmk,behavior-macro";
             wait-ms = <5>;
             tap-ms = <5>;
             #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp LCTRL>,
-                <&macro_tap &kp F>,
-                <&macro_release &kp LCTRL>,
-                <&macro_tap &kp DQT>,
-                <&macro_tap &kp M &kp SPACE &kp P &kp L &kp PIPE>,
-                <&macro_tap &kp E &kp G &kp E &kp PIPE>,
-                <&macro_tap &kp S &kp SPACE &kp R &kp E &kp C &kp PIPE>,
-                <&macro_tap &kp L &kp O &kp C &kp PIPE>,
-                <&macro_tap &kp N &kp O &kp N &kp PIPE>,
-                <&macro_tap &kp S &kp S &kp SPACE &kp A &kp R &kp E>,
-                <&macro_tap &kp DQT>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp F>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp DQT>
+                , <&macro_tap &kp M &kp SPACE &kp P &kp L &kp PIPE>
+                , <&macro_tap &kp E &kp G &kp E &kp PIPE>
+                , <&macro_tap &kp S &kp SPACE &kp R &kp E &kp C &kp PIPE>
+                , <&macro_tap &kp L &kp O &kp C &kp PIPE>
+                , <&macro_tap &kp N &kp O &kp N &kp PIPE>
+                , <&macro_tap &kp S &kp S &kp SPACE &kp A &kp R &kp E>
+                , <&macro_tap &kp DQT>;
         };
         poe_rf_mm3: poe_rm_map_mods_3 {
             compatible = "zmk,behavior-macro";
             wait-ms = <5>;
             tap-ms = <5>;
             #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp LCTRL>,
-                <&macro_tap &kp F>,
-                <&macro_release &kp LCTRL>,
-                <&macro_tap &kp DQT>,
-                <&macro_tap &kp M &kp SPACE &kp P &kp L &kp PIPE>,
-                <&macro_tap &kp E &kp G &kp E &kp PIPE>,
-                <&macro_tap &kp S &kp SPACE &kp R &kp E &kp C &kp PIPE>,
-                <&macro_tap &kp L &kp O &kp C &kp PIPE>,
-                <&macro_tap &kp N &kp O &kp N &kp PIPE>,
-                <&macro_tap &kp S &kp S &kp SPACE &kp A &kp R &kp E &kp PIPE>,
-                <&macro_tap &kp N &kp S &kp E &kp C &kp R &kp A &kp T &kp E &kp PIPE>,
-                <&macro_tap &kp M &kp SPACE &kp L &kp I &kp PIPE>,
-                <&macro_tap &kp P &kp O &kp S &kp S>,
-                <&macro_tap &kp DQT>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp F>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp DQT>
+                , <&macro_tap &kp M &kp SPACE &kp P &kp L &kp PIPE>
+                , <&macro_tap &kp E &kp G &kp E &kp PIPE>
+                , <&macro_tap &kp S &kp SPACE &kp R &kp E &kp C &kp PIPE>
+                , <&macro_tap &kp L &kp O &kp C &kp PIPE>
+                , <&macro_tap &kp N &kp O &kp N &kp PIPE>
+                , <&macro_tap &kp S &kp S &kp SPACE &kp A &kp R &kp E &kp PIPE>
+                , <&macro_tap &kp N &kp S &kp E &kp C &kp R &kp A &kp T &kp E &kp PIPE>
+                , <&macro_tap &kp M &kp SPACE &kp L &kp I &kp PIPE>
+                , <&macro_tap &kp P &kp O &kp S &kp S>
+                , <&macro_tap &kp DQT>;
         };
     };
 };
@@ -212,82 +212,82 @@
         };
     };
 
-	keymap {
-		compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
-		default_layer {
+        default_layer {
             display-name = "alpha";
-// -------------------------------------------------------------------------------------------------------------------------------------
-// |   ESC  |  J  |  F  |  M   |  P   |  V   |                                          |  -   |  U    |  O    |  Y   |   K   |   |  |
-// | L CTRL |  R  |  S  |  N   |  T   |  G   |                                          |  /   |  A    |  E    |  I   |   H   |   \  |
-// |  SHIFT |  X  |  C  |  L   |  D   |  B   |  NONE   |   NONE  |  |   NONE  |  NONE   |  \   |  ,    |  .    |  '   |   `   |   `  |
-//                      | MUTE | TAB  | DEL  |  SCLN   |   ESC   |  |   ENT   |  SPACE  | BSPC | R ALT |  NONE |
-			bindings = <
-	&lt LOWER ESC  &kp J      &kp F      &kp M       &kp P       &kp V                                                              &minplus     &kp U        &kp O       &kp Y      &kp K      &kp PIPE
-	&mt LCTRL BSPC &hm LALT R &hm LGUI S &hm LSHFT N &hm LCTRL T &kp G                                                              &fslast      &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
-	&kp LSHFT      &kp X      &kp C      &kp L       &kp D       &kp B   &none          &none         &none         &none           &kp BSLH     &comque      &dotexc     &kp SQT    &kp GRAVE  &kp GRAVE
-                                         &sl MACRO   &kp TAB     &kp DEL &lt LOWER SCLN &lt RAISE ESC &lt RAISE RET &lt LOWER SPACE &kp BSPC     &kp RALT     &sl ADJUST
-			>;
+            // -------------------------------------------------------------------------------------------------------------------------------------
+            // |   ESC  |  J  |  F  |  M   |  P   |  V   |                                          |  -   |  U    |  O    |  Y   |   K   |   |  |
+            // | L CTRL |  R  |  S  |  N   |  T   |  G   |                                          |  /   |  A    |  E    |  I   |   H   |   \  |
+            // |  SHIFT |  X  |  C  |  L   |  D   |  B   |  NONE   |   NONE  |  |   NONE  |  NONE   |  \   |  ,    |  .    |  '   |   `   |   `  |
+            //                      | MUTE | TAB  | DEL  |  SCLN   |   ESC   |  |   ENT   |  SPACE  | BSPC | R ALT |  NONE |
+            bindings = <
+                &lt LOWER ESC  &kp J      &kp F      &kp M       &kp P       &kp V                                                              &minplus     &kp U        &kp O       &kp Y      &kp K      &kp PIPE
+                &mt LCTRL BSPC &hm LALT R &hm LGUI S &hm LSHFT N &hm LCTRL T &kp G                                                              &fslast      &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
+                &kp LSHFT      &kp X      &kp C      &kp L       &kp D       &kp B   &none          &none         &none         &none           &kp BSLH     &comque      &dotexc     &kp SQT    &kp GRAVE  &kp GRAVE
+                                                     &sl MACRO   &kp TAB     &kp DEL &lt LOWER SCLN &lt RAISE ESC &lt RAISE RET &lt LOWER SPACE &kp BSPC     &kp RALT     &sl ADJUST
+            >;
 
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
-		};
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
 
-		gaming_layer {
+        gaming_layer {
             display-name = "gaming";
-			bindings = <
-	&hm LALT ESC  &kp J &kp F &kp M &kp P &kp V                                                        &minplus  &kp U        &kp O       &kp Y      &kp K      &kp PIPE
-	&mt LCTRL TAB &kp R &kp S &kp N &kp T &kp G                                                        &fslast   &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
-	&kp LSHFT     &kp X &kp C &kp L &kp D &kp B    &none  &none                     &none  &none       &kp BSLH  &comque      &dotexc     &kp SQT    &kp GRAVE  &kp GRAVE
-                         &kp C_MUTE &kp TAB &kp DEL &kp SCLN &lt RAISE ESC     &lt RAISE RET &lt LOWER SPACE &kp BSPC &kp RALT &sl ADJUST
-			>;
+            bindings = <
+                &hm LALT ESC  &kp J &kp F &kp M      &kp P   &kp V                                                            &minplus  &kp U        &kp O       &kp Y      &kp K      &kp PIPE
+                &mt LCTRL TAB &kp R &kp S &kp N      &kp T   &kp G                                                            &fslast   &hm RCTRL A  &hm RSHFT E &hm RGUI I &hm LALT H &hm RALT BSLH
+                &kp LSHFT     &kp X &kp C &kp L      &kp D   &kp B   &none    &none             &none         &none           &kp BSLH  &comque      &dotexc     &kp SQT    &kp GRAVE  &kp GRAVE
+                                          &kp C_MUTE &kp TAB &kp DEL &kp SCLN &lt RAISE ESC     &lt RAISE RET &lt LOWER SPACE &kp BSPC  &kp RALT     &sl ADJUST
+            >;
 
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
-		};
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
 
         macro_layer {
             display-name = "macro";
             bindings = <
-    &none &none &poe_ho &poe_rst_xp &poe_gf &none                           &none &none &none &none &none &none
-    &none &none &poe_rf_mm1 &poe_rf_mm2 &poe_rf_mm3 &none                           &none &none &none &none &none &none
-    &none &none &none   &none &none &none &none &none   &none &none &none &none &none &none &none &none
-                        &none &none &none &none &none   &none &none &none &none &none
+                &none &none &poe_ho     &poe_rst_xp &poe_gf     &none                           &none &none &none &none &none &none
+                &none &none &poe_rf_mm1 &poe_rf_mm2 &poe_rf_mm3 &none                           &none &none &none &none &none &none
+                &none &none &none       &none       &none       &none &none &none   &none &none &none &none &none &none &none &none
+                                        &none       &none       &none &none &none   &none &none &none &none &none
             >;
         };
 
         lower_layer {
             display-name = "lower";
             bindings = <
-    &trans &kp AT    &kp LBKT &kp RBKT &kp HASH  &kp CARET                                      &kp LPAR  &kp N7  &kp N8 &kp N9 &kp RPAR  &none
-    &trans &kp TILDE &kp PIPE &kp BSLH &kp UNDER &kp DLLR                                       &kp MINUS &kp N4  &kp N5 &kp N6 &kp ASTRK &none
-    &trans &kp PRCNT &kp LBRC &kp RBRC &kp EXCL  &kp AMPS  &none     &none     &none     &none  &kp PLUS  &kp N1  &kp N2 &kp N3 &kp FSLH  &none
-                              &none    &none     &kp MINUS &kp COLON &kp SEMI  &kp EQUAL &kp N0 &kp COMMA &kp DOT &none
+                &trans &kp AT    &kp LBKT &kp RBKT &kp HASH  &kp CARET                                      &kp LPAR  &kp N7  &kp N8 &kp N9 &kp RPAR  &none
+                &trans &kp TILDE &kp PIPE &kp BSLH &kp UNDER &kp DLLR                                       &kp MINUS &kp N4  &kp N5 &kp N6 &kp ASTRK &none
+                &trans &kp PRCNT &kp LBRC &kp RBRC &kp EXCL  &kp AMPS  &none     &none     &none     &none  &kp PLUS  &kp N1  &kp N2 &kp N3 &kp FSLH  &none
+                                          &none    &none     &kp MINUS &kp COLON &kp SEMI  &kp EQUAL &kp N0 &kp COMMA &kp DOT &none
             >;
 
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         raise_layer {
             display-name = "raise";
             bindings = <
-    &trans &kp F12 &kp F7 &kp F8 &kp F9 &kp PSCRN                                        &kp INS &kp HOME   &kp PG_DN  &kp PG_UP  &kp END   &none
-    &trans &kp F11 &kp F4 &kp F5 &kp F6 &kp CAPS                                         &none   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT &none
-    &trans &kp F10 &kp F1 &kp F2 &kp F3 &kp PAUSE_BREAK &none   &none    &none   &none   &none   &kp C_PREV &kp C_PLAY &kp C_NEXT &none     &none
-                          &trans &trans &trans          &trans  &trans   &trans  &trans  &trans  &trans    &trans
+                &trans &kp F12 &kp F7 &kp F8 &kp F9 &kp PSCRN                                        &kp INS &kp HOME   &kp PG_DN  &kp PG_UP  &kp END   &none
+                &trans &kp F11 &kp F4 &kp F5 &kp F6 &kp CAPS                                         &none   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT &none
+                &trans &kp F10 &kp F1 &kp F2 &kp F3 &kp PAUSE_BREAK &none   &none    &none   &none   &none   &kp C_PREV &kp C_PLAY &kp C_NEXT &none     &none
+                                      &trans &trans &trans          &trans  &trans   &trans  &trans  &trans  &trans    &trans
             >;
 
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         adjust_layer {
             display-name = "adjust";
             bindings = <
-    &none &rgb_ug RGB_TOG   &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_SAD                 &rgb_ug RGB_TOG &sys_reset   &bootloader  &none        &none &none
-    &none &ext_power EP_TOG &rgb_ug RGB_BRI &rgb_ug RGB_BRD &none           &none                           &none           &bt BT_CLR   &none        &none        &none &none
-    &none &out OUT_TOG      &none           &none           &none           &none &none &none  &none &none  &none           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none &none
-                                            &none           &none           &none &none &none  &none &tog GAMING  &none &none  &none
+                &none &rgb_ug RGB_TOG   &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_SAD                 &rgb_ug RGB_TOG &sys_reset   &bootloader  &none        &none &none
+                &none &ext_power EP_TOG &rgb_ug RGB_BRI &rgb_ug RGB_BRD &none           &none                           &none           &bt BT_CLR   &none        &none        &none &none
+                &none &out OUT_TOG      &none           &none           &none           &none &none &none  &none &none  &none           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none &none
+                                        &none           &none           &none           &none &none &none  &tog GAMING  &none           &none        &none
             >;
         };
-	};
+    };
 };
 
 / {
