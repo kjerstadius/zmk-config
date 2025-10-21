@@ -5,21 +5,16 @@
 */
 
 #include "behaviors_custom.dtsi"
+#include "combos.dtsi"
 #include "macros.dtsi"
+#include "layer_ids.h"
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
-
-#define DEFAULT 0
-#define GAMING  1
-#define MACRO   2
-#define LOWER   3
-#define RAISE   4
-#define ADJUST  5
-
 
 / {
     keymap {
@@ -102,145 +97,74 @@
 
 / {
     combos {
-        compatible = "zmk,combos";
-
         combo_z {
-            timeout-ms = <50>;
             key-positions = <1 2>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp Z>;
         };
         combo_macro_layer {
-            timeout-ms = <50>;
             key-positions = <1 5>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&sl MACRO>;
         };
         combo_lbracket {
-            timeout-ms = <50>;
             key-positions = <2 3>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp LBKT>;
         };
         combo_rbracket {
-            timeout-ms = <50>;
             key-positions = <3 4>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp RBKT>;
         };
         combo_q {
-            timeout-ms = <50>;
             key-positions = <4 5>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp Q>;
         };
         combo_underscore {
-            timeout-ms = <50>;
             key-positions = <6 7>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp UNDERSCORE>;
         };
         combo_adjust_layer {
-            timeout-ms = <50>;
             key-positions = <6 10>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&sl ADJUST>;
         };
         combo_tilde {
-            timeout-ms = <50>;
             key-positions = <7 8>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp TILDE>;
         };
         combo_tab {
-            timeout-ms = <50>;
             key-positions = <13 14>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp TAB>;
         };
         combo_caps {
-            timeout-ms = <50>;
             key-positions = <13 16>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&ccaps>;
         };
         combo_lparbrace {
-            timeout-ms = <50>;
             key-positions = <14 15>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&lparbrc>;
         };
         combo_rparbrace {
-            timeout-ms = <50>;
             key-positions = <15 16>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&rparbrc>;
         };
         combo_w {
-            timeout-ms = <50>;
             key-positions = <16 17>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp W>;
         };
         combo_select_all {
-            timeout-ms = <50>;
             key-positions = <18 19>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp LC(A)>;
         };
         combo_ae {
-            timeout-ms = <50>;
             key-positions = <19 20>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp RA(A)>;
         };
         combo_oe {
-            timeout-ms = <50>;
             key-positions = <19 21>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp RA(O)>;
         };
         combo_aa {
-            timeout-ms = <50>;
             key-positions = <20 21>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp RA(W)>;
         };
         combo_copy {
-            timeout-ms = <50>;
             key-positions = <26 27>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp LC(C)>;
         };
         combo_cut {
-            timeout-ms = <50>;
             key-positions = <26 28>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp LC(X)>;
         };
         combo_paste {
-            timeout-ms = <50>;
             key-positions = <27 28>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp LC(V)>;
         };
         combo_undo {
-            timeout-ms = <50>;
             key-positions = <25 26>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp LC(Z)>;
         };
         combo_gt {
-            timeout-ms = <50>;
             key-positions = <36 37>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp GT>;
         };
         combo_lt {
-            timeout-ms = <50>;
             key-positions = <35 36>;
-            layers = <DEFAULT GAMING>;
-            bindings = <&kp LT>;
         };
     };
 };

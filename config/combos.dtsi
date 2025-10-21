@@ -1,0 +1,124 @@
+#include "layer_ids.h"
+#include <behaviors.dtsi>
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_z {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp Z>;
+        };
+        combo_macro_layer {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&sl MACRO>;
+        };
+        combo_lbracket {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp LBKT>;
+        };
+        combo_rbracket {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp RBKT>;
+        };
+        combo_q {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp Q>;
+        };
+        combo_underscore {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp UNDERSCORE>;
+        };
+        combo_adjust_layer {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&sl ADJUST>;
+        };
+        combo_tilde {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp TILDE>;
+        };
+        combo_tab {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp TAB>;
+        };
+        combo_caps {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&ccaps>;
+        };
+        combo_lparbrace {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&lparbrc>;
+        };
+        combo_rparbrace {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&rparbrc>;
+        };
+        combo_w {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp W>;
+        };
+        combo_select_all {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp LC(A)>;
+        };
+        combo_ae {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp RA(A)>;
+        };
+        combo_oe {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp RA(O)>;
+        };
+        combo_aa {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp RA(W)>;
+        };
+        combo_copy {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp LC(C)>;
+        };
+        combo_cut {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp LC(X)>;
+        };
+        combo_paste {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp LC(V)>;
+        };
+        combo_undo {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp LC(Z)>;
+        };
+        combo_gt {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp GT>;
+        };
+        combo_lt {
+            timeout-ms = <50>;
+            layers = <DEFAULT GAMING>;
+            bindings = <&kp LT>;
+        };
+    };
+};
