@@ -4,6 +4,7 @@
 * SPDX-License-Identifier: MIT
 */
 
+#include "behaviors_custom.dtsi"
 #include "macros.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -20,117 +21,7 @@
 #define ADJUST  5
 
 
-&mt {
-    tapping-term-ms = <170>;
-};
-
-&sl {
-    release-after-ms = <5000>;
-};
-
 / {
-    behaviors {
-        aasp: a_asperand {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp A>, <&kp AT>;
-            mods = <MOD_LALT>;
-        };
-
-        bsdel: backspace_del {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp DEL>;
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-        };
-
-        ccaps: cw_caps {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&caps_word>, <&kp CAPS>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        colsem: colon_semicolon {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp COLON>, <&kp SEMI>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        comque: comma_question {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp QMARK>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        dotexc: dot_exclamation {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp EXCL>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        dqttilde: dquote_tilde {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES>, <&kp TILDE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        fslast: fslash_asterisk {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp ASTERISK>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        hm: homerow_mod {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <145>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-
-        lparbrc: lparen_lbrace {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp LBRC>;
-            mods = <(MOD_LALT|MOD_LSFT|MOD_RALT|MOD_RSFT)>;
-        };
-
-        minplus: minus_plus {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp PLUS>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        rparbrc: rparen_rbrace {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp RPAR>, <&kp RBRC>;
-            mods = <(MOD_LALT|MOD_LSFT|MOD_RALT|MOD_RSFT)>;
-        };
-
-        sqttick: squote_backtick {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE>, <&kp GRAVE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        underdollar: underscore_dollar {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp UNDERSCORE>, <&kp DOLLAR>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
