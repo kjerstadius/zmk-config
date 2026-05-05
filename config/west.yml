@@ -2,12 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: kjerstadius
-      url-base: https://github.com/kjerstadius
   projects:
     - name: zmk
-      remote: kjerstadius
-      revision: refactor/layer-label
+      remote: zmkfirmware
+      revision: v0.3
       import: app/west.yml
   self:
     path: config
