@@ -2,6 +2,16 @@
 #include "macros.dtsi"
 #include "layer_ids.h"
 
+// Configure these properties here to ensure they are set after the last time behaviors.dtsi is included, since that
+// resets them to their default values.
+&mt {
+    tapping-term-ms = <170>;
+};
+
+&sl {
+    release-after-ms = <5000>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
