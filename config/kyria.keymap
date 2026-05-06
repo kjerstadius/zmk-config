@@ -5,7 +5,6 @@
 */
 
 #include "include/behaviors_custom.dtsi"
-#include "include/combos.dtsi"
 #include "include/macros.dtsi"
 #include "include/layer_ids.h"
 
@@ -15,6 +14,26 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
+
+#define START_POS_R0L 0
+#define START_POS_R0R 6
+#define START_POS_R1L 12
+#define START_POS_R1R 18
+#define START_POS_R2L 24
+#define START_POS_R2R 32
+#define START_POS_R3L 40
+#define START_POS_R3R 45
+
+#define COMBO_COL_OFFSET_R0L 1
+#define COMBO_COL_OFFSET_R0R 0
+#define COMBO_COL_OFFSET_R1L 1
+#define COMBO_COL_OFFSET_R1R 0
+#define COMBO_COL_OFFSET_R2L 1
+#define COMBO_COL_OFFSET_R2R 2
+#define COMBO_COL_OFFSET_R3L 0
+#define COMBO_COL_OFFSET_R3R 0
+
+#include "include/combos.dtsi"
 
 #define LAYOUT_ADAPTER(K00, K01, K02, K03, K04, K05,                     K06, K07, K08, K09, K0A, K0B, \
                        K10, K11, K12, K13, K14, K15,                     K16, K17, K18, K19, K1A, K1B, \
@@ -26,79 +45,5 @@
                                       K30  K31  K32  K33  K34  K35  K36  K37  K38  K39
 
 # include "include/keymap_common.dtsi"
-
-/ {
-    combos {
-        combo_z {
-            key-positions = <1 2>;
-        };
-        combo_macro_layer {
-            key-positions = <1 5>;
-        };
-        combo_lbracket {
-            key-positions = <2 3>;
-        };
-        combo_rbracket {
-            key-positions = <3 4>;
-        };
-        combo_q {
-            key-positions = <4 5>;
-        };
-        combo_underscore {
-            key-positions = <6 7>;
-        };
-        combo_adjust_layer {
-            key-positions = <6 10>;
-        };
-        combo_tilde {
-            key-positions = <7 8>;
-        };
-        combo_tab {
-            key-positions = <13 14>;
-        };
-        combo_caps {
-            key-positions = <13 16>;
-        };
-        combo_lparbrace {
-            key-positions = <14 15>;
-        };
-        combo_rparbrace {
-            key-positions = <15 16>;
-        };
-        combo_w {
-            key-positions = <16 17>;
-        };
-        combo_select_all {
-            key-positions = <18 19>;
-        };
-        combo_ae {
-            key-positions = <19 20>;
-        };
-        combo_oe {
-            key-positions = <19 21>;
-        };
-        combo_aa {
-            key-positions = <20 21>;
-        };
-        combo_copy {
-            key-positions = <26 27>;
-        };
-        combo_cut {
-            key-positions = <26 28>;
-        };
-        combo_paste {
-            key-positions = <27 28>;
-        };
-        combo_undo {
-            key-positions = <25 26>;
-        };
-        combo_gt {
-            key-positions = <36 37>;
-        };
-        combo_lt {
-            key-positions = <35 36>;
-        };
-    };
-};
 
 /* vim: set ft=dts: */
