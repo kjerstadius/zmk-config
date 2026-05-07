@@ -21,13 +21,13 @@
             // -------------------------------------------------------------------------------------------------------------------------------------
             // |   ESC  |  J  |  F  |   M   |  P   |  V   |                                          |  - + |   U   |   O   |  Y   |   K   |   |  |
             // | L CTRL |  R  |  S  |   N   |  T   |  G   |                                          |  / * |   A   |   E   |  I   |   H   |   \  |
-            // |  SHIFT |  X  |  C  |   L   |  D   |  B   |  NONE   |   NONE  |  |   NONE  |  NONE   |  _ ~ |  , ?  |  . !  |  " ~ |  ' `  | ` ~  |
+            // |  SHIFT |  X  |  C  |   L   |  D   |  B   |  NONE   |   NONE  |  |   NONE  |  NONE   |  _ $ |  , ?  |  . !  |  " ~ |  ' `  | ` ~  |
             //                      | MACRO | TAB  | DEL  |  SCLN   |   ESC   |  |   ENT   |  SPACE  | BSPC | R ALT |  NONE |
             bindings = <LAYOUT_ADAPTER(
-                &lt LOWER ESC,  &kp J,      &kp F,      &kp M,       &kp P,       &kp V,                                                                   &minplus,     &kp U,        &kp O,       &kp Y,      &kp K,      &kp PIPE,
-                &mt LCTRL BSPC, &hm LALT R, &hm LGUI S, &hm LSHFT N, &hm LCTRL T, &kp G,                                                                   &fslast,      &hm RCTRL A,  &hm RSHFT E, &hm RGUI I, &hm LALT H, &hm RALT BSLH,
-                &kp LSHFT,      &kp X,      &kp C,      &kp L,       &kp D,       &kp B,   &none,          &none,          &none,         &none,           &underdollar, &comque,      &dotexc,     &dqttilde,  &sqttick,   &kp GRAVE,
-                                                        &sl MACRO,   &kp TAB,     &kp DEL, &lt LOWER SCLN, &lt RAISE ESC,  &lt RAISE RET, &lt LOWER SPACE, &kp BSPC,     &kp RALT,     &sl ADJUST
+                &lt LOWER ESC,  &kp J,       &kp F,       &kp M,        &kp P,        &kp V,                                                                &minplus,     &kp U,        &kp O,        &kp Y,       &kp K,       &kp PIPE,
+                &mt LCTRL BSPC, &hml LALT R, &hml LGUI S, &hml LSHFT N, &hml LCTRL T, &kp G,                                                                &fslast,      &hmr RCTRL A, &hmr RSHFT E, &hmr RGUI I, &hmr LALT H, &hmr RALT BSLH,
+                &kp LSHFT,      &kp X,       &kp C,       &kp L,        &kp D,        &kp B,   &none,       &none,          &none,         &none,           &underdollar, &comque,      &dotexc,      &dqttilde,   &sqttick,    &kp GRAVE,
+                                                          &sl MACRO,    &kp TAB,      &DEL, &lt LOWER SCLN, &lt RAISE ESC,  &lt RAISE RET, &lt LOWER SPACE, &bsdel,       &kp RALT,     &sl ADJUST
             )>;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -36,10 +36,10 @@
         gaming_layer {
             display-name = "gaming";
             bindings = <LAYOUT_ADAPTER(
-                &hm LALT ESC,  &kp J, &kp F, &kp M,      &kp P,   &kp V,                                                             &minplus,     &kp U,        &kp O,       &kp Y,      &kp K,      &kp PIPE,
-                &mt LCTRL TAB, &kp R, &kp S, &kp N,      &kp T,   &kp G,                                                             &fslast,      &hm RCTRL A,  &hm RSHFT E, &hm RGUI I, &hm LALT H, &hm RALT BSLH,
-                &kp LSHFT,     &kp X, &kp C, &kp L,      &kp D,   &kp B,   &none,    &none,          &none,          &none,          &underdollar, &comque,      &dotexc,     &dqttilde,  &sqttick,   &kp GRAVE,
-                                             &kp C_MUTE, &kp TAB, &kp DEL, &kp SCLN, &lt RAISE ESC,  &lt RAISE RET, &lt LOWER SPACE, &kp BSPC,     &kp RALT,     &sl ADJUST
+                &mt LALT ESC,  &kp J, &kp F, &kp M,      &kp P,   &kp V,                                                             &minplus,     &kp U,         &kp O,        &kp Y,       &kp K,       &kp PIPE,
+                &mt LCTRL TAB, &kp R, &kp S, &kp N,      &kp T,   &kp G,                                                             &fslast,      &hmr RCTRL A,  &hmr RSHFT E, &hmr RGUI I, &hmr LALT H, &hmr RALT BSLH,
+                &kp LSHFT,     &kp X, &kp C, &kp L,      &kp D,   &kp B,   &none,    &none,          &none,         &none,           &underdollar, &comque,       &dotexc,      &dqttilde,   &sqttick,    &kp GRAVE,
+                                             &kp C_MUTE, &kp TAB, &DEL,    &kp SCLN, &lt RAISE ESC,  &lt RAISE RET, &lt LOWER SPACE, &kp BSPC,     &kp RALT,      &sl ADJUST
             )>;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
