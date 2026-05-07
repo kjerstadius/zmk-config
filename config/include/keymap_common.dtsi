@@ -1,3 +1,4 @@
+#include "adaptive_keys.dtsi"
 #include "behaviors_custom.dtsi"
 #include "macros.dtsi"
 #include "layer_ids.h"
@@ -24,9 +25,9 @@
             // |  SHIFT |  X  |  W  |   L   |  D   |  B   |  NONE   |   NONE  |  |   NONE  |  NONE   |  _ $ |  , ?  |  . !  |  " ~ |  ' `  | ` ~  |
             //                      | MACRO | TAB  | : ;  |   R     |   ESC   |  |   ENT   |  SPACE  | BSPC | R ALT |  NONE |
             bindings = <LAYOUT_ADAPTER(
-                &lt LOWER ESC,  &kp J,       &kp F,       &kp M,        &kp P,        &kp V,                                                                &minplus,     &kp U,        &kp O,        &kp Y,       &kp K,       &kp PIPE,
+                &lt LOWER ESC,  &kp J,       &kp F,       &ak_m,        &kp P,        &kp V,                                                                &minplus,     &kp U,        &kp O,        &kp Y,       &ak_k,       &kp PIPE,
                 &mt LCTRL BSPC, &hml LALT C, &hml LGUI S, &hml LSHFT N, &hml LCTRL T, &kp G,                                                                &fslast,      &hmr RCTRL A, &hmr RSHFT E, &hmr RGUI I, &hmr LALT H, &hmr RALT BSLH,
-                &kp LSHFT,      &kp X,       &kp W,       &kp L,        &kp D,        &kp B,   &none,       &none,          &none,         &none,           &underdollar, &comque,      &dotexc,      &dqttilde,   &sqttick,    &kp GRAVE,
+                &kp LSHFT,      &ak_x,       &kp W,       &kp L,        &ak_d,        &kp B,   &none,       &none,          &none,         &none,           &underdollar, &comque,      &dotexc,      &dqttilde,   &sqttick,    &kp GRAVE,
                                                           &sl MACRO,    &kp TAB,      &colsem, &lt LOWER R, &lt RAISE ESC,  &lt RAISE RET, &lt LOWER SPACE, &bsdel,       &kp RALT,     &sl ADJUST
             )>;
 
@@ -36,9 +37,9 @@
         gaming_layer {
             display-name = "gaming";
             bindings = <LAYOUT_ADAPTER(
-                &mt LALT ESC,  &kp J, &kp F, &kp M,      &kp P,   &kp V,                                                          &minplus,     &kp U,         &kp O,        &kp Y,       &kp K,       &kp PIPE,
+                &mt LALT ESC,  &kp J, &kp F, &ak_m,      &kp P,   &kp V,                                                          &minplus,     &kp U,         &kp O,        &kp Y,       &ak_k,       &kp PIPE,
                 &mt LCTRL TAB, &kp C, &kp S, &kp N,      &kp T,   &kp G,                                                          &fslast,      &hmr RCTRL A,  &hmr RSHFT E, &hmr RGUI I, &hmr LALT H, &hmr RALT BSLH,
-                &kp LSHFT,     &kp X, &kp W, &kp L,      &kp D,   &kp B,   &none, &none,          &none,         &none,           &underdollar, &comque,       &dotexc,      &dqttilde,   &sqttick,    &kp GRAVE,
+                &kp LSHFT,     &ak_x, &kp W, &kp L,      &kp D,   &kp B,   &none, &none,          &none,         &none,           &underdollar, &comque,       &dotexc,      &dqttilde,   &sqttick,    &kp GRAVE,
                                              &kp C_MUTE, &kp TAB, &colsem, &kp R, &lt RAISE ESC,  &lt RAISE RET, &lt LOWER SPACE, &kp BSPC,     &kp RALT,      &sl ADJUST
             )>;
 

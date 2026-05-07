@@ -1,0 +1,46 @@
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    behaviors {
+        ak_d: ak_d {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp D>;
+
+            akt_wd { trigger-keys = <W>; max-prior-idle-ms = <250>; bindings = <&kp Q>; };
+        };
+
+        ak_h: ak_h {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp H>;
+
+            akt_ah { trigger-keys = <A>; max-prior-idle-ms = <250>; bindings = <&kp U>; };
+        };
+
+        ak_k: ak_k {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp K>;
+
+            akt_ak { trigger-keys = <U>; max-prior-idle-ms = <250>; bindings = <&kp A>; };
+        };
+
+        ak_m: ak_m {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp M>;
+
+            akt_pm { trigger-keys = <P>; max-prior-idle-ms = <250>; bindings = <&kp L>; };
+        };
+
+        ak_x: ak_x {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp X>;
+
+            akt_lw { trigger-keys = <L>; max-prior-idle-ms = <250>; bindings = <&kp N>; };
+            akt_lx { trigger-keys = <L>; max-prior-idle-ms = <250>; bindings = <&kp S>; };
+        };
+    };
+};
