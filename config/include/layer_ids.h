@@ -1,3 +1,5 @@
+#pragma once
+
 #define DEFAULT 0
 #define GAMING  1
 #define MACRO   2
