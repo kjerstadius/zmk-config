@@ -34,12 +34,19 @@
             akt_pm { trigger-keys = <P>; max-prior-idle-ms = <250>; bindings = <&kp L>; };
         };
 
+        ak_w: ak_w {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp W>;
+
+            akt_lw { trigger-keys = <L>; max-prior-idle-ms = <250>; bindings = <&kp N>; };
+        };
+
         ak_x: ak_x {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp X>;
 
-            akt_lw { trigger-keys = <L>; max-prior-idle-ms = <250>; bindings = <&kp N>; };
             akt_lx { trigger-keys = <L>; max-prior-idle-ms = <250>; bindings = <&kp S>; };
         };
     };

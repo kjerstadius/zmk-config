@@ -35,7 +35,7 @@
             bindings = <LAYOUT_ADAPTER(
                 &lt LOWER ESC,  &kp J,       &kp F,       &ak_m,        &kp P,        &kp V,                                                                    &minplus,     &kp U,        &kp O,        &kp Y,       &ak_k,       &kp PIPE,
                 &mt LCTRL BSPC, &hml LALT C, &hml LGUI S, &hml LSHFT N, &hml LCTRL T, &kp G,                                                                    &fslast,      &hmr RCTRL A, &hmr RSHFT E, &hmr RGUI I, &hmr LALT H, &hmr RALT BSLH,
-                &kp LSHFT,      &ak_x,       &kp W,       &kp L,        &ak_d,        &kp B,       &none,       &none,          &none,         &none,           &underdollar, &comque,      &dotexc,      &dqttilde,   &sqttick,    &kp GRAVE,
+                &kp LSHFT,      &ak_x,       &ak_w,       &kp L,        &ak_d,        &kp B,       &none,       &none,          &none,         &none,           &underdollar, &comque,      &dotexc,      &dqttilde,   &sqttick,    &kp GRAVE,
                                                           &sl MACROS,   &kp TAB,      &ln_col 0 0, &lt LOWER R, &lt RAISE ESC,  &lt RAISE RET, &lt LOWER SPACE, &bsdel,       &kp RALT,     &sl ADJUST
             )>;
 
@@ -47,7 +47,7 @@
             bindings = <LAYOUT_ADAPTER(
                 &mt LALT ESC,  &kp J, &kp F, &ak_m,      &kp P,   &kp V,                                                              &minplus,     &kp U,         &kp O,        &kp Y,       &ak_k,       &kp PIPE,
                 &mt LCTRL TAB, &kp C, &kp S, &kp N,      &kp T,   &kp G,                                                              &fslast,      &hmr RCTRL A,  &hmr RSHFT E, &hmr RGUI I, &hmr LALT H, &hmr RALT BSLH,
-                &kp LSHFT,     &ak_x, &kp W, &kp L,      &kp D,   &kp B,       &none, &none,          &none,         &none,           &underdollar, &comque,       &dotexc,      &dqttilde,   &sqttick,    &kp GRAVE,
+                &kp LSHFT,     &ak_x, &ak_w, &kp L,      &kp D,   &kp B,       &none, &none,          &none,         &none,           &underdollar, &comque,       &dotexc,      &dqttilde,   &sqttick,    &kp GRAVE,
                                              &kp C_MUTE, &kp TAB, &ln_col 0 0, &kp R, &lt RAISE ESC,  &lt RAISE RET, &lt LOWER SPACE, &kp BSPC,     &kp RALT,      &sl ADJUST
             )>;
 
