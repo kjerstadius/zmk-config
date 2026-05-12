@@ -1,0 +1,56 @@
+//
+//                                         ▀▀▀▀▀     ▀▀▀▀▀          ▀▀█▀▀
+//                                         ▄▀▀▀▄  ▄  ▄▀▀▀▄  ▄  ▄▀▀▀▄  █  ▄▀▀▀▄
+//                                         █   █  █  █   █  █  █   █  █  █   █
+//                                          ▀▀▀   █   ▀▀▀   █   ▀▀▀   ▀   ▀▀▀
+//                                                █      ▄▄▄█▄▄▄    █   █
+//                                                ▀      █  █  █     █▄█
+//                                              ▀▀▀▀▀    █  █  █      ▀
+//                                                       ▀  ▀  ▀
+//
+// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+#define CORE_COL_START_R0L 0
+#define CORE_COL_START_R0R 5
+#define CORE_COL_START_R1L 10
+#define CORE_COL_START_R1R 15
+#define CORE_COL_START_R2L 21
+#define CORE_COL_START_R2R 26
+#define CORE_COL_START_R3L 32
+#define CORE_COL_START_R3R 35
+
+#define LAYOUT_ADAPTER(K00, K01, K02, K03, K04, K05,                     K06, K07, K08, K09, K0A, K0B, \
+                       K10, K11, K12, K13, K14, K15,                     K16, K17, K18, K19, K1A, K1B, \
+                       K20, K21, K22, K23, K24, K25, K26, K27, K28, K29, K2A, K2B, K2C, K2D, K2E, K2F, \
+                                      K30, K31, K32, K33, K34, K35, K36, K37, K38, K39)                \
+                            K01  K02  K03  K04  K05                      K06  K07  K08  K09  K0A       \
+                            K11  K12  K13  K14  K15                      K16  K17  K18  K19  K1A       \
+                       K20  K21  K22  K23  K24  K25                      K2A  K2B  K2C  K2D  K2E  K2F  \
+                                                K32  K33  K34  K35  K36  K37
+
+# include "include/keymap_common.dtsi"
+
+/ {
+    keymap {
+        default_layer {
+            /delete-property/ sensor-bindings;
+        };
+        gaming_layer {
+            /delete-property/ sensor-bindings;
+        };
+        macro_layer {
+            /delete-property/ sensor-bindings;
+        };
+        lower_layer {
+            /delete-property/ sensor-bindings;
+        };
+        raise_layer {
+            /delete-property/ sensor-bindings;
+        };
+        adjust_layer {
+            /delete-property/ sensor-bindings;
+        };
+    };
+};
+
+/* vim: set ft=dts: */

@@ -29,3 +29,11 @@ include:
     cmake-args: "-DCONFIG_ZMK_KEYBOARD_NAME='\"Kyria #2\"'
                  -DCONFIG_ZMK_RGB_UNDERGLOW=n"
     artifact-name: kyria_right_no_underglow
+  - board: seeeduino_xiao_ble
+    shield: totem_left
+    cmake-args: "-DCONFIG_ZMK_KEYBOARD_NAME='\"Totem #1\"'"
+    artifact_name: totem_left
+  - board: seeeduino_xiao_ble
+    shield: totem_right
+    cmake-args: "-DCONFIG_ZMK_KEYBOARD_NAME='\"Totem #1\"'"
+    artifact_name: totem_right
