@@ -1,0 +1,45 @@
+#pragma once
+
+#define CORE_KEY_POS_LEFT(row, pos) (CORE_COL_START_R##row##L + pos)
+#define CORE_KEY_POS_RIGHT(row, pos) (CORE_COL_START_R##row##R + pos)
+#define CORE_KEY_POS(side, row, pos) CORE_KEY_POS_##side##(row, pos)
+
+#define CORE_KEY_POS_LEFT_SIDE \
+    CORE_KEY_POS_LEFT(0, 0) \
+    CORE_KEY_POS_LEFT(0, 1) \
+    CORE_KEY_POS_LEFT(0, 2) \
+    CORE_KEY_POS_LEFT(0, 3) \
+    CORE_KEY_POS_LEFT(0, 4) \
+    CORE_KEY_POS_LEFT(1, 0) \
+    CORE_KEY_POS_LEFT(1, 1) \
+    CORE_KEY_POS_LEFT(1, 2) \
+    CORE_KEY_POS_LEFT(1, 3) \
+    CORE_KEY_POS_LEFT(1, 4) \
+    CORE_KEY_POS_LEFT(2, 0) \
+    CORE_KEY_POS_LEFT(2, 1) \
+    CORE_KEY_POS_LEFT(2, 2) \
+    CORE_KEY_POS_LEFT(2, 3) \
+    CORE_KEY_POS_LEFT(2, 4) \
+    CORE_KEY_POS_LEFT(3, 2) \
+    CORE_KEY_POS_LEFT(3, 3) \
+    CORE_KEY_POS_LEFT(3, 4)
+
+#define CORE_KEY_POS_RIGHT_SIDE \
+    CORE_KEY_POS_RIGHT(0, 0) \
+    CORE_KEY_POS_RIGHT(0, 1) \
+    CORE_KEY_POS_RIGHT(0, 2) \
+    CORE_KEY_POS_RIGHT(0, 3) \
+    CORE_KEY_POS_RIGHT(0, 4) \
+    CORE_KEY_POS_RIGHT(1, 0) \
+    CORE_KEY_POS_RIGHT(1, 1) \
+    CORE_KEY_POS_RIGHT(1, 2) \
+    CORE_KEY_POS_RIGHT(1, 3) \
+    CORE_KEY_POS_RIGHT(1, 4) \
+    CORE_KEY_POS_RIGHT(2, 0) \
+    CORE_KEY_POS_RIGHT(2, 1) \
+    CORE_KEY_POS_RIGHT(2, 2) \
+    CORE_KEY_POS_RIGHT(2, 3) \
+    CORE_KEY_POS_RIGHT(2, 4) \
+    CORE_KEY_POS_RIGHT(3, 0) \
+    CORE_KEY_POS_RIGHT(3, 1) \
+    CORE_KEY_POS_RIGHT(3, 2)

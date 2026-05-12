@@ -1,142 +1,141 @@
 #include "layer_ids.h"
+#include "positions.h"
 #include <behaviors.dtsi>
 
-#define COMBO_KEY_POS_LEFT(row, pos) (START_POS_R##row##L + COMBO_COL_OFFSET_R##row##L + pos)
-#define COMBO_KEY_POS_RIGHT(row, pos) (START_POS_R##row##R + COMBO_COL_OFFSET_R##row##R + pos)
-#define COMBO_KEYS(side, row, pos1, pos2) COMBO_KEY_POS_##side##(row, pos1) COMBO_KEY_POS_##side##(row, pos2)
+#define COMBO_KEYS(side, row, pos1, pos2) CORE_KEY_POS(side##, row, pos1) CORE_KEY_POS(side##, row, pos2)
 
 / {
     combos {
         compatible = "zmk,combos";
 
         combo_z {
-            key-positions = <COMBO_KEYS(LEFT,0,0,1)>;
+            key-positions = <COMBO_KEYS(LEFT, 0, 0, 1)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp Z>;
         };
         combo_macro_layer {
-            key-positions = <COMBO_KEYS(LEFT,0,0,4)>;
+            key-positions = <COMBO_KEYS(LEFT, 0, 0, 4)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&sl MACRO>;
         };
         combo_lbracket {
-            key-positions = <COMBO_KEYS(LEFT,0,1,2)>;
+            key-positions = <COMBO_KEYS(LEFT, 0, 1, 2)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp LBKT>;
         };
         combo_rbracket {
-            key-positions = <COMBO_KEYS(LEFT,0,2,3)>;
+            key-positions = <COMBO_KEYS(LEFT, 0, 2, 3)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp RBKT>;
         };
         combo_q {
-            key-positions = <COMBO_KEYS(LEFT,0,1,3)>;
+            key-positions = <COMBO_KEYS(LEFT, 0, 1, 3)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp Q>;
         };
         combo_underscore {
-            key-positions = <COMBO_KEYS(RIGHT,0,0,1)>;
+            key-positions = <COMBO_KEYS(RIGHT, 0, 0, 1)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp UNDERSCORE>;
         };
         combo_adjust_layer {
-            key-positions = <COMBO_KEYS(RIGHT,0,0,4)>;
+            key-positions = <COMBO_KEYS(RIGHT, 0, 0, 4)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&sl ADJUST>;
         };
         combo_tilde {
-            key-positions = <COMBO_KEYS(RIGHT,0,1,2)>;
+            key-positions = <COMBO_KEYS(RIGHT, 0, 1, 2)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp TILDE>;
         };
         combo_tab {
-            key-positions = <COMBO_KEYS(LEFT,1,0,1)>;
+            key-positions = <COMBO_KEYS(LEFT, 1, 0, 1)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp TAB>;
         };
         combo_caps {
-            key-positions = <COMBO_KEYS(LEFT,1,0,3)>;
+            key-positions = <COMBO_KEYS(LEFT, 1, 0, 3)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&ccaps>;
         };
         combo_lparbrace {
-            key-positions = <COMBO_KEYS(LEFT,1,1,2)>;
+            key-positions = <COMBO_KEYS(LEFT, 1, 1, 2)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&lparbrc>;
         };
         combo_rparbrace {
-            key-positions = <COMBO_KEYS(LEFT,1,2,3)>;
+            key-positions = <COMBO_KEYS(LEFT, 1, 2, 3)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&rparbrc>;
         };
         combo_select_all {
-            key-positions = <COMBO_KEYS(RIGHT,1,0,1)>;
+            key-positions = <COMBO_KEYS(RIGHT, 1, 0, 1)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp LC(A)>;
         };
         combo_ae {
-            key-positions = <COMBO_KEYS(RIGHT,1,1,2)>;
+            key-positions = <COMBO_KEYS(RIGHT, 1, 1, 2)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp RA(A)>;
         };
         combo_oe {
-            key-positions = <COMBO_KEYS(RIGHT,1,1,3)>;
+            key-positions = <COMBO_KEYS(RIGHT, 1, 1, 3)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp RA(O)>;
         };
         combo_aa {
-            key-positions = <COMBO_KEYS(RIGHT,1,2,3)>;
+            key-positions = <COMBO_KEYS(RIGHT, 1, 2, 3)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp RA(W)>;
         };
         combo_undo {
-            key-positions = <COMBO_KEYS(LEFT,2,0,1)>;
+            key-positions = <COMBO_KEYS(LEFT, 2, 0, 1)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp LC(Z)>;
         };
         combo_copy {
-            key-positions = <COMBO_KEYS(LEFT,2,1,2)>;
+            key-positions = <COMBO_KEYS(LEFT, 2, 1, 2)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp LC(C)>;
         };
         combo_cut {
-            key-positions = <COMBO_KEYS(LEFT,2,1,3)>;
+            key-positions = <COMBO_KEYS(LEFT, 2, 1, 3)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp LC(X)>;
         };
         combo_paste {
-            key-positions = <COMBO_KEYS(LEFT,2,2,3)>;
+            key-positions = <COMBO_KEYS(LEFT, 2, 2, 3)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp LC(V)>;
         };
         combo_lt {
-            key-positions = <COMBO_KEYS(RIGHT,2,1,2)>;
+            key-positions = <COMBO_KEYS(RIGHT, 2, 1, 2)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp LT>;
         };
         combo_gt {
-            key-positions = <COMBO_KEYS(RIGHT,2,2,3)>;
+            key-positions = <COMBO_KEYS(RIGHT, 2, 2, 3)>;
             timeout-ms = <50>;
             layers = <DEFAULT GAMING>;
             bindings = <&kp GT>;

@@ -1,3 +1,4 @@
+#include "positions.h"
 #include <behaviors.dtsi>
 
 / {
@@ -75,7 +76,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 34 35 36 37 38 39 43 45 46 47 48 49>;
+            hold-trigger-key-positions = <CORE_KEY_POS_RIGHT_SIDE CORE_KEY_POS(LEFT, 3, 2) CORE_KEY_POS(LEFT, 3, 3) CORE_KEY_POS(LEFT, 3, 4)>;
             hold-trigger-on-release;
         };
 
@@ -87,7 +88,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 40 41 42 43 44 45 47>;
+            hold-trigger-key-positions = <CORE_KEY_POS_LEFT_SIDE CORE_KEY_POS(RIGHT, 3, 0) CORE_KEY_POS(RIGHT, 3, 1) CORE_KEY_POS(RIGHT, 3, 2)>;
             hold-trigger-on-release;
         };
 
