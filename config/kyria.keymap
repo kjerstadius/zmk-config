@@ -4,17 +4,7 @@
 * SPDX-License-Identifier: MIT
 */
 
-#include "include/macros.dtsi"
-#include "include/layer_ids.h"
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/rgb.h>
-
-#include "include/combos.dtsi"
 #define CORE_COL_START_R0L 1
 #define CORE_COL_START_R0R 6
 #define CORE_COL_START_R1L 13

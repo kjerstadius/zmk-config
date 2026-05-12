@@ -1,8 +1,11 @@
 #include "positions.h"
+#include "utils.h"
 #include <behaviors.dtsi>
 
 / {
     behaviors {
+        LINGER_KEY(ln_col, &kp COLON &kp U &kp P &kp RET, &colsem);
+
         aasp: a_asperand {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
